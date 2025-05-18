@@ -13,38 +13,30 @@ public static void main(String[] args)
   scanner.nextLine();
   System.out.println("Enter marks");
   marks = scanner.nextInt();
-  if (marks>90) 
+  if (marks>=80) 
   {
-    grade= "A+";
-  }
-  else if (marks>=80) 
-  {
-    grade= "A";  
+    grade= "A";
   }
   else if (marks>=70) 
   {
-    grade= "B+";
+    grade= "B";
   }
   else if (marks>=60) 
   {
-    grade= "B";
-  }
-  else if (marks>=50) 
-  {
     grade= "C";
   }
-  else if (marks>=40) 
+  else if (marks>=45) 
   {
     grade= "D";
   }
   else 
   {
-    grade= "NG";
+    grade= "F";
   }
-  System.out.println("Name = "+name);
-  System.out.println("Roll No = "+roll_no);
-  System.out.println("Marks = "+marks);
-  System.out.println("Grade = "+grade);
+  System.out.println("Name :" +name);
+  System.out.println("Roll number :" +roll);
+  System.out.println("Marks :" +marks);
+  System.out.println("Grade :" +grade);
   scanner.close();
 }
 }
